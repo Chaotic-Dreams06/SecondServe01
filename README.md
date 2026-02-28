@@ -90,14 +90,11 @@ This will launch the app on [http://localhost:5173](http://localhost:5173).
 
 ### **Screenshots**
 
-![Screenshot1](Add screenshot 1 here with proper name)
-*Description of what this screenshot shows*
+https://drive.google.com/drive/folders/1ONmMsTHFPM3mlo1P0RXb0Zry9Wn255Yj
 
-![Screenshot2](Add screenshot 2 here with proper name)
-*Description of what this screenshot shows*
+https://drive.google.com/drive/folders/133llpONN0nV4ZhXSkB9KQ8P9J9PIY6qN
 
-![Screenshot3](Add screenshot 3 here with proper name)
-*Description of what this screenshot shows*
+https://drive.google.com/drive/folders/1fHRJi9t83g8P9GW46-yuCHr10lhES-6G
 
 ---
 
