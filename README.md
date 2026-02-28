@@ -135,5 +135,5 @@ If you decide to add an API in the future, here’s what it might look like:
 
 ## **License**
 
-This project is licensed under the [MIT] License - see the LICENSE file for details.
+This project is licensed under the [MIT] License - see the https://github.com/Chaotic-Dreams06/SecondServe01/blob/main/LICENSE file for details.
 
