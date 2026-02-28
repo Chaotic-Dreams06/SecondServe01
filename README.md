@@ -10,7 +10,7 @@
 
 ### **Hosted Project Link**
 
-[Project hosted link here]
+https://second-serve01-zv32.vercel.app/
 
 ---
 
@@ -57,7 +57,6 @@
 2. **Reserve Food**: NGOs or individuals can reserve available food directly through the platform.
 3. **Status Updates**: Hosts can update the status of the food (e.g., “reserved” or “expired”).
 4. **Responsive Design**: The platform is mobile-friendly and adjusts based on the screen size.
-5. **Dark Mode**: Tailwind's dark mode features are enabled for improved accessibility and aesthetics.
 
 ---
 
@@ -126,69 +125,15 @@ If you decide to add an API in the future, here’s what it might look like:
 
 `https://api.secondserve.com`
 
-#### **Endpoints**
-
-1. **GET /api/food-listings**
-
-   * **Description**: Fetch all available food listings.
-   * **Response**:
-
-     ```json
-     {
-       "status": "success",
-       "data": [
-         {
-           "id": "12345",
-           "eventName": "Wedding Reception",
-           "foodType": "Vegetarian",
-           "quantity": "30 servings",
-           "location": "City Hall",
-           "contact": "123-456-7890",
-           "status": "available"
-         }
-       ]
-     }
-     ```
-
-2. **POST /api/food-listings**
-
-   * **Description**: Add a new food listing.
-   * **Request Body**:
-
-     ```json
-     {
-       "eventName": "Charity Dinner",
-       "foodType": "Non-Veg",
-       "quantity": "50 servings",
-       "location": "Community Center",
-       "contact": "987-654-3210"
-     }
-     ```
-   * **Response**:
-
-     ```json
-     {
-       "status": "success",
-       "message": "Food listing added successfully"
-     }
-     ```
-
----
 
 ## **Team Contributions**
 
-* **[Name 1]**: Frontend development, Firebase integration, UI/UX design
-* **[Name 2]**: Backend setup (Firebase), Listing functionality, Deployment
+* **Anu Surendran K**: Frontend development, Firebase integration, UI/UX design
+* **Swetha S Warrier**: Backend setup (Firebase), Listing functionality, Deployment
 
 ---
 
 ## **License**
 
-This project is licensed under the MIT License. See the LICENSE file for details.
-
----
-
-Feel free to replace the placeholders (like [Your Name], [Your College], and [Add screenshot here]) with the actual details. This will give your project a complete, organized **README** that’s ready for sharing, whether you’re submitting it to a hackathon, hosting it on GitHub, or presenting to mentors.
-
-Let me know if you need any further adjustments or more details for specific sections!
+This project is licensed under the [MIT] License - see the LICENSE file for details.
 
