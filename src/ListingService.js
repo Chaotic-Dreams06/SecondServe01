@@ -30,22 +30,59 @@ export const addListing = async (data) => {
 };
 
 export const getListings = async () => {
-  try {
-    const querySnapshot = await getDocs(collection(db, "listings"));
-    const listings = [];
+  // Sample listings for demonstration
+  const sampleListings = [
+    {
+      id: "sample-1",
+      eventName: "Tech Conference 2026",
+      foodType: "Sandwiches & Wraps",
+      quantity: 25,
+      location: "Convention Center, Downtown",
+      contact: "tech@example.com",
+      status: "available",
+      safetyConfirmed: true,
+      createdAt: new Date(),
+      expiryTime: new Date(Date.now() + 4 * 60 * 60 * 1000)
+    },
+    {
+      id: "sample-3",
+      eventName: "Corporate Lunch",
+      foodType: "Salads & Fresh Bowls",
+      quantity: 30,
+      location: "Business Park, Mid-town",
+      contact: "corporate@example.com",
+      status: "available",
+      safetyConfirmed: true,
+      createdAt: new Date(),
+      expiryTime: new Date(Date.now() + 4 * 60 * 60 * 1000)
+    },
+    {
+      id: "sample-4",
+      eventName: "Charity Gala",
+      foodType: "Appetizers & Canapés",
+      quantity: 50,
+      location: "Grand Hotel, Downtown",
+      contact: "charity@example.com",
+      status: "available",
+      safetyConfirmed: true,
+      createdAt: new Date(),
+      expiryTime: new Date(Date.now() + 4 * 60 * 60 * 1000)
+    },
+    {
+      id: "sample-5",
+      eventName: "Community Gathering",
+      foodType: "Pizza & Pasta",
+      quantity: 35,
+      location: "Community Center, Eastside",
+      contact: "community@example.com",
+      status: "available",
+      safetyConfirmed: true,
+      createdAt: new Date(),
+      expiryTime: new Date(Date.now() + 4 * 60 * 60 * 1000)
+    }
+  ];
 
-    querySnapshot.forEach((doc) => {
-      listings.push({
-        id: doc.id,
-        ...doc.data()
-      });
-    });
-
-    return listings;
-  } catch (error) {
-    console.error("Error fetching listings:", error);
-    return [];
-  }
+  return sampleListings;
 };
 
 export const updateListingStatus = async (id, newStatus) => {
