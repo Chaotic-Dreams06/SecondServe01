@@ -10,22 +10,26 @@ function EventMenuCard({ item, refreshListings, isOpen, onClose }) {
     {
       id: 1,
       name: "Main Course Special",
-      price: 25
+      price: 25,
+      image: "https://images.pexels.com/photos/821365/pexels-photo-821365.jpeg?w=300&h=200&fit=crop"
     },
     {
       id: 2,
       name: "Appetizer Combo",
-      price: 20
+      price: 20,
+      image: "https://images.pexels.com/photos/1624487/pexels-photo-1624487.jpeg?w=300&h=200&fit=crop"
     },
     {
       id: 3,
       name: "Dessert Platter",
-      price: 15
+      price: 15,
+      image: "https://images.pexels.com/photos/312418/pexels-photo-312418.jpeg?w=300&h=200&fit=crop"
     },
     {
       id: 4,
       name: "Beverage Package",
-      price: 10
+      price: 10,
+      image: "https://images.pexels.com/photos/3407910/pexels-photo-3407910.jpeg?w=300&h=200&fit=crop"
     }
   ];
 
@@ -66,6 +70,9 @@ function EventMenuCard({ item, refreshListings, isOpen, onClose }) {
           <div className="food-items">
             {foodItems.map((food) => (
               <div key={food.id} className="food-item">
+                {food.image && (
+                  <img src={food.image} alt={food.name} className="food-item-image" />
+                )}
                 <div className="item-header">
                   <h4>{food.name}</h4>
                 </div>

@@ -29,6 +29,26 @@
   transform: scaleX(1);
 }
 
+/* Card Image */
+.card-image-container {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  background: linear-gradient(135deg, #f0f4f8 0%, #e8f0f8 100%);
+  position: relative;
+}
+
+.card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.card:hover .card-image {
+  transform: scale(1.08);
+}
+
 .card:hover {
   transform: translateY(-12px) scale(1.02);
   box-shadow: 0 16px 48px rgba(0, 102, 204, 0.2), 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -71,6 +91,13 @@
   font-weight: 700;
 }
 
+.quantity-reserved {
+  color: #d97706;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-left: 0.5rem;
+}
+
 /* Button styling */
 .card .button,
 .card button {
@@ -103,6 +130,88 @@
 .card button:active {
   transform: translateY(0);
   box-shadow: 0 2px 8px rgba(0, 102, 204, 0.2);
+}
+
+/* Reserve Section */
+.reserve-section {
+  padding: 1.5rem;
+  background: linear-gradient(135deg, #f0f4f8 0%, #e8f0f8 100%);
+  border-radius: 12px;
+  margin: 1.5rem auto;
+  width: calc(100% - 3rem);
+}
+
+.reserve-section label {
+  display: block;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #0066cc;
+  margin-bottom: 1rem;
+}
+
+.reserve-input-group {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  margin-bottom: 1.5rem;
+}
+
+.reserve-input {
+  flex: 1;
+  padding: 0.8rem 1rem;
+  border: 2px solid #d4e3f7;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #0066cc;
+  background: white;
+  transition: all 0.3s ease;
+}
+
+.reserve-input:focus {
+  outline: none;
+  border-color: #0066cc;
+  box-shadow: 0 0 0 4px rgba(0, 102, 204, 0.15);
+}
+
+.reserve-max {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #2d3748;
+  white-space: nowrap;
+}
+
+.reserve-button-group {
+  display: flex;
+  gap: 0.8rem;
+}
+
+.button-confirm {
+  flex: 1;
+  background: linear-gradient(135deg, #48bb78 0%, #38a169 100%) !important;
+  box-shadow: 0 6px 20px rgba(72, 187, 120, 0.35) !important;
+  margin: 0 !important;
+  width: auto !important;
+  padding: 0.8rem 1.5rem !important;
+}
+
+.button-confirm:hover {
+  background: linear-gradient(135deg, #38a169 0%, #2f8659 100%) !important;
+  box-shadow: 0 10px 32px rgba(72, 187, 120, 0.5) !important;
+}
+
+.button-cancel {
+  flex: 1;
+  background: #cbd5e0 !important;
+  box-shadow: none !important;
+  margin: 0 !important;
+  width: auto !important;
+  padding: 0.8rem 1.5rem !important;
+  color: #2d3748 !important;
+}
+
+.button-cancel:hover {
+  background: #a0aec0 !important;
 }
 
 /* Responsive Design */
